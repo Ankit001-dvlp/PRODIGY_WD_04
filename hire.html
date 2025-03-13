@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Me</title>
+  <link rel="stylesheet" href="hireme.css">
+  <script defer src="hi.js"></script>
+</head>
+<body>
+
+  <section class="hire-me-section">
+    <div class="container">
+      <div class="details">
+        <h1>Hire Me</h1>
+        <p>I'm Ankit, a passionate web developer. Let’s collaborate and bring your ideas to life!</p>
+        <p>If you are looking for a creative, skilled, and reliable web developer, feel free to fill out the form below.</p>
+      </div>
+
+      
+      <form action="https://formspree.io/f/mldjrkoz" method="POST" id="contact-form">
+        <!-- Hidden input to avoid empty name field -->
+        <input type="hidden" name="_next" value="https://formspree.io/f/mldjrkoz/thank-you">
+        <input type="hidden" name="_subject" value="Hire me">
+        <div class="input-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Subject:</label>
+          <textarea id="subject" name="subject" rows="2" required></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="message">Compose email:</label>
+            <textarea id="subject" name="subject" rows="4" required></textarea>
+          </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </div>
+  </section></form>
+
+</body>
+</html>
